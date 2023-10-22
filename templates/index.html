@@ -2,9 +2,15 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="globals.css" />
-  <link rel="stylesheet" href="styleguide.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../static/globals.css" />
+  <link rel="stylesheet" href="../static/styleguide.css" />
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    var jinjaLabels = '{{ labels| tojson }}';
+    var jinjaValues = '{{ values| tojson }}';
+    var jinjaLegend = '{{ legend }}';
+  </script>
 </head>
 
 <body>
@@ -14,10 +20,13 @@
         <div class="company-group">
           <div class="overlap-group">
             <div class="text-wrapper">fin.dec</div>
-            <img class="rectangle" src="img/rectangle-1464.png" />
+            <img class="rectangle" src="../static/img/rectangle-1464.png" />
+            
           </div>
         </div>
-        <div class="main-group"></div>
+        <div class="main-group">
+          <canvas id="myChart" width="auto" height="auto"></canvas>
+        </div>
         <div class="user-info-group">
           <p class="goals-info">
             <span class="span">Current goals: </span>
@@ -45,10 +54,10 @@
               <span class="span">401K Matching: </span> <span class="text-wrapper-2">Yes (30%)</span>
             </p>
           </div>
-          <img class="seperator" src="img/seperator.svg" />
+          <img class="seperator" src="../static/img/seperator.svg" />
         </div>
       </div>
-      <img class="frame" src="img/frame-4592.svg" />
+      <img class="frame" src="../static/img/frame-4592.svg" />
     </div>
     <div class="large-right-panel-wrapper">
       <div class="large-right-panel">
@@ -59,18 +68,18 @@
                 <div class="overlap">
                   <div class="help-circle">
                     <div class="overlap-group-2">
-                      <img class="vector" src="img/vector-1.svg" />
-                      <img class="img" src="img/vector.svg" />
-                      <img class="group-2" src="img/group-48097132.png" />
+                      <img class="vector" src="../static/img/vector-1.svg" />
+                      <img class="img" src="../static/img/vector.svg" />
+                      <img class="group-2" src="../static/img/group-48097132.png" />
                     </div>
-                    <img class="subtract" src="img/subtract.png" />
+                    <img class="subtract" src="../static/img/subtract.png" />
                   </div>
                   <div class="rectangle-2"></div>
                 </div>
               </div>
             </div>
             <div class="profile">
-              <img class="profile-pic" src="img/profile-pic.svg" />
+              <img class="profile-pic" src="../static/img/profile-pic.svg" />
               <div class="text-info">
                 <p class="hello-msg">
                   <span class="text-wrapper-3">Hello</span> <span class="text-wrapper-4"> 👋</span>
@@ -85,7 +94,7 @@
           <div class="group-3"></div>
           <div class="button-frame">
             <div class="overlap-group-wrapper">
-              <a href="survey\fin_dec_survey.html">
+              <a href="../survey/fin_dec_survey.html">
                 <div class="div-wrapper">
                   <div class="text-wrapper-5">Recalculate</div>
                 </div>
@@ -97,5 +106,5 @@
     </div>
   </div>
 </body>
-
+<script type="text/javascript" src="../static/logic.js"></script>
 </html>
