@@ -22,9 +22,31 @@ console.log(jinjaValues);
 
 // get chart canvas
 var ctx = document.getElementById("myChart").getContext("2d");
+var ctx1 = document.getElementById("myChart1").getContext("2d");
+var ctx2 = document.getElementById("myChart2").getContext("2d");
 
 // create the chart using the chart canvas
 var myChart = new Chart(ctx, {
   type: 'line',
   data: chartData,
 });
+
+var myChart1 = new Chart(ctx1, {
+  type: 'bar',
+  data: chartData,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  },
+  borderWidth: 1
+});
+
+
+var myChart2 = new Chart(ctx2, {
+  type: 'bar',
+  data: chartData,
+});
+

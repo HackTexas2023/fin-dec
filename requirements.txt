@@ -8,4 +8,6 @@ scipy==1.11.3
 six==1.16.0
 threadpoolctl==3.2.0
 tzdata==2023.3
-matplotlib
+requests==2.31.0
+bs4==0.0.1
+matplotlib==3.8.0
