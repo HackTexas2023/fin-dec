@@ -27,12 +27,13 @@ def contributions(income:float, account:str, contribution_size: float, current_a
     
     return account_balance, total_taxes
 
-age=60        
-account_balance1, tax_balance1 = contributions(100000.0, "traditional_ira",400.0, 20, age, 4381.25)
-account_balance2, tax_balance2 = contributions(100000.0, "roth_ira",400.0, 20, age, 4381.25)
-account_balance3, tax_balance3 = contributions(100000.0, "roth_401k",1200.0, 20, age, 4381.25)
-account_balance4, tax_balance4 = contributions(100000.0, "traditional_401k",1200.0, 20, age, 4381.25)
-plt.title("temp")
+age=60
+income = 1000000.0
+account_balance1, tax_balance1 = contributions(income, "traditional_ira",400.0, 20, age, 4381.25)
+account_balance2, tax_balance2 = contributions(income, "roth_ira",400.0, 20, age, 4381.25)
+account_balance3, tax_balance3 = contributions(income, "roth_401k",1200.0, 20, age, 4381.25)
+account_balance4, tax_balance4 = contributions(income, "traditional_401k",1200.0, 20, age, 4381.25)
+plt.title("Cost Basis")
 plt.plot([i for i in range(len(tax_balance1))], [a_i - b_i for a_i, b_i in zip(account_balance1, tax_balance1)],label = "traditional_ira 1", linestyle="-")
 plt.plot([i for i in range(len(tax_balance2))], [a_i - b_i for a_i, b_i in zip(account_balance2, tax_balance2)],label = "roth_ira", linestyle="-.")
 plt.plot([i for i in range(len(tax_balance3))], [a_i - b_i for a_i, b_i in zip(account_balance3, tax_balance3)],label = "roth_401k", linestyle="--")
