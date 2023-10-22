@@ -47,6 +47,7 @@ def roth_ira(contribution_size: float, current_age: int, retirement_age: int, re
             curr_money = money_amount[-1] - retirement_spending
             curr_money = curr_money* 1.0085
             money_amount.append(curr_money)
+            taxes_paid.append(0)
 
     return money_amount, taxes_paid
 
@@ -101,6 +102,7 @@ def roth_401k(contribution_size: float, current_age: int, retirement_age: int, r
         for j in range(12):
             curr_money = (money_amount[-1] + contribution_size) * 1.0085
             money_amount.append(curr_money)
+            taxes_paid.append(0)
 
     years_contributing = retirement_age - current_age
 
@@ -123,6 +125,7 @@ def roth_401k(contribution_size: float, current_age: int, retirement_age: int, r
             curr_money = money_amount[-1] - retirement_spending
             curr_money = curr_money* 1.0085
             money_amount.append(curr_money)
+            taxes_paid.append(0)
 
     return money_amount, taxes_paid
 
@@ -178,14 +181,11 @@ def traditional_401k(contribution_size: float, current_age: int, retirement_age:
     return money_amount, taxes_paid
 
 
-account_balance, tax_balance = traditional_401k(500, 20, 60, 4381.25)
-print(account_balance[40*12])
-plt.plot([i for i in range(len(tax_balance))], tax_balance)
-plt.show()
-
-
-
     
     
     
-    
+# account_balance, tax_balance = roth_401k(500.0, 20, 60, 4381.25)
+# print(tax_balance)
+# plt.title("temp")
+# plt.plot([i for i in range(len(tax_balance))], tax_balance)
+# plt.show()    
