@@ -1,5 +1,5 @@
 # fin-dec
-Personal Finance Decision Maker [findec.tech](findec.tech)
+Personal Finance Decision Maker [findec.tech](https://findec.tech)
 
 ## Inspiration
 Energized by the drive for financial independence, our journey began with a spark of insight! Surveying fellow students at UT, we uncovered a gap in understanding financial planning. The enthusiasm to bridge this gap fueled our quest. Fueled by their lack of knowledge, we embarked on a mission: to empower students with the wisdom of financial freedom. The result? An inspiring web application that opens the door to a worry-free financial journey, encouraging every student to dream big and achieve more!
