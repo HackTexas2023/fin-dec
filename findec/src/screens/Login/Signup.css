@@ -1,0 +1,52 @@
+.sign-up {
+    background-color: #19171d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sign-up .div-3 {
+    background-color: var(--mainblack);
+    height: 800px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .sign-up .left-side-instance {
+    left: 720px !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+  
+  .sign-up .form-instance {
+    left: 180px !important;
+    position: absolute !important;
+    top: 148px !important;
+  }
+  
+  .sign-up .form-2 {
+    left: 151px !important;
+  }
+  
+  .sign-up .form-3 {
+    align-self: stretch !important;
+    border-radius: unset !important;
+    overflow: unset !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+  
+  .sign-up .form-4 {
+    left: 76px !important;
+  }
+  
+  .sign-up .form-5 {
+    left: 136px !important;
+  }
+  
+  .sign-up .icons-google {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
