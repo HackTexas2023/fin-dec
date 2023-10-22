@@ -1,0 +1,39 @@
+.message {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--mainred);
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  position: relative;
+  width: 360px;
+}
+
+.message .frame-6 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 12px;
+  position: relative;
+}
+
+.message .icons-error {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.message .text-wrapper-5 {
+  color: var(--mainred);
+  flex: 1;
+  font-family: var(--body-2-SB-font-family);
+  font-size: var(--body-2-SB-font-size);
+  font-style: var(--body-2-SB-font-style);
+  font-weight: var(--body-2-SB-font-weight);
+  letter-spacing: var(--body-2-SB-letter-spacing);
+  line-height: var(--body-2-SB-line-height);
+  margin-top: -1px;
+  position: relative;
+}
