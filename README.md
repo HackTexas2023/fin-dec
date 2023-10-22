@@ -1,5 +1,5 @@
 # fin-dec
-Personal Finance Decision Maker
+Personal Finance Decision Maker [Link text Here](findec.tech)
 
 ## Inspiration
 Energized by the drive for financial independence, our journey began with a spark of insight! Surveying fellow students at UT, we uncovered a gap in understanding financial planning. The enthusiasm to bridge this gap fueled our quest. Fueled by their lack of knowledge, we embarked on a mission: to empower students with the wisdom of financial freedom. The result? An inspiring web application that opens the door to a worry-free financial journey, encouraging every student to dream big and achieve more!
@@ -34,7 +34,7 @@ The development of fin.dec presented several formidable challenges, with one of 
 
 **Account Diversity:** Different retirement accounts, such as 401(k)s, IRAs, Roth IRAs, and pension plans, come with their own unique rules, contribution limits, and tax treatments. To create a model that could provide accurate recommendations, we needed to gain expertise on the details of each type of account.
 
-## Accomplishments that we're proud of
+## Accomplishments
 We take immense pride in our groundbreaking prediction algorithm, crafted to tailor financial profiles for users across diverse age groups. This innovative approach ensures users meet both current and future financial aspirations with precision and foresight. Recognizing the vital role personal finance plays in shaping our destinies, we've taken a significant leap toward a future where financial literacy is paramount. This achievement marks not just a step, but a giant stride towards a financially enlightened future for all, leaving a lasting impact on the path to prosperity.
 
 ## What we learned
