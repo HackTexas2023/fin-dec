@@ -14,4 +14,20 @@ def federal_tax_amount(total_income: float, filing: int) -> float:
     
     return 0.0
 
+def Roth_ira(contribution_size: float, years_till_retirement: int)->None:
+    money_amount = [0]
+
+    for i in range(20, years_till_retirement):
+        for i in range(12):
+            curr_money = (money_amount[-1] + contribution_size) * 1.0085
+            money_amount.append(curr_money)
+
+    for i in range(60 - years_till_retirement):
+        for i in range(12):
+            cost_of_living = (contribution_size + (max((4381.25 - contribution_size),)) * 1.10 )
+            curr_money = money_amount[-1] - cost_of_living - federal_tax_amount(cost_of_living, 0)
+            curr_money = curr_money*1.0085
+            money_amount.append(curr_money)
+    
+    
 print(federal_tax_amount(60000.0, 1))
