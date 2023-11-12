@@ -1,5 +1,6 @@
 # <img src="findec_logo.png" alt="Image Description" width="30" /> fin.dec
 
+<img src="images/survey.png" alt="Login Page" width="380" /> <img src="images/main_page.png" alt="Main Page" width="380"/>
 [Personal Finance Decision Maker](https://findec.tech)
 
 ## Table of Contents
